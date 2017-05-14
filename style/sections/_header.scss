@@ -1,0 +1,64 @@
+header.header-top {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 5%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0,0,0,0));
+  padding-top: 2rem;
+  .navbar-default {
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  div .brand {
+    display: inline-block;
+    max-width: 50%;
+  }
+  div#responsive-menu.navbar-collapse.collapse.in {
+    border: none;
+  }
+   li a {
+     text-align: center;
+     font: bold 1.8rem 'PT Serif';
+   }
+  .navbar {
+    border:none;
+  }
+  a.brand {
+    margin-left: 15px;
+  }
+   button.navbar-toggle.collapsed {
+    height: 40px;
+  }
+}
+//--------------------------------------------------------------------MEDIA TABLET NAVBAR
+@media screen and (min-width: 768px) {
+  header.header-top {
+    a.brand {
+      display: inline-block;
+      max-width: 50%;
+    }
+    ul.nav {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -2rem;
+    display: inline-flex;
+    border-bottom: 4px solid #91111c;
+    } 
+    .nav li a {
+      color: #000;
+      background-color: transparent;
+    }
+    .nav li:hover a {
+      color: #91111c;
+    }
+    .nav  li:first-child a {
+      padding-left: 0;
+    }
+    .nav  li:last-child a {
+      padding-right: 0;
+    }
+  }
+}
